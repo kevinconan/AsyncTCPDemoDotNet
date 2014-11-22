@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BB71EDA7-0159-4956-B3DE-108DC7124B40}</ProjectGuid>
+    <ProjectGuid>{B84165A3-9987-400D-99B2-023AC2893C50}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AsyncTCPDemo.Client</RootNamespace>
-    <AssemblyName>AsyncTCPDemo.Client</AssemblyName>
+    <RootNamespace>AsyncTCPDemo.Service</RootNamespace>
+    <AssemblyName>AsyncTCPDemo.Service</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -44,9 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AsyncTcpClient.cs" />
+    <Compile Include="AsyncTcpService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AsyncTCPDemo.Common\AsyncTCPDemo.Common.csproj">
@@ -57,9 +60,6 @@
       <Project>{7d3fab0c-e3ed-4522-995e-b29da55650e4}</Project>
       <Name>AsyncTCPDemo.Models</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

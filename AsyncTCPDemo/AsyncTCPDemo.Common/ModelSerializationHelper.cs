@@ -36,6 +36,7 @@ namespace AsyncTCPDemo.Common
         /// <returns>实体对象</returns>
         public static T Deserialize<T>(string base64)
         {
+            if (string.IsNullOrEmpty(base64)) return default(T);
             using (MemoryStream ms = new MemoryStream(Convert.FromBase64String(base64)))
             {
                 return (T)formatter.Deserialize(ms);
