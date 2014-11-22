@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncTCPDemo.Client", "Asyn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncTCPDemo.Models", "AsyncTCPDemo.Models\AsyncTCPDemo.Models.csproj", "{7D3FAB0C-E3ED-4522-995E-B29DA55650E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncTCPDemo.Common", "AsyncTCPDemo.Common\AsyncTCPDemo.Common.csproj", "{CB384728-507C-4A97-8E3B-A75E77E94D75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7D3FAB0C-E3ED-4522-995E-B29DA55650E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D3FAB0C-E3ED-4522-995E-B29DA55650E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D3FAB0C-E3ED-4522-995E-B29DA55650E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB384728-507C-4A97-8E3B-A75E77E94D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB384728-507C-4A97-8E3B-A75E77E94D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB384728-507C-4A97-8E3B-A75E77E94D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB384728-507C-4A97-8E3B-A75E77E94D75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
