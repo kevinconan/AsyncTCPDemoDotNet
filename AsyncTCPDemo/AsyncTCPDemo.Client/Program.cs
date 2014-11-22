@@ -20,19 +20,9 @@ namespace AsyncTCPDemo.Client
             {
                 Console.WriteLine("Send message " + i);
 
-                new ThreadStart(delegate()
-                {
-                    try
-                    {
-                        AsyncTcpClient host = new AsyncTcpClient(IPAddress.Loopback);
-                        Message m = new Message { Content = new People { Name = "P" + i, Age = rnd.Next(i * 10) } };
-                        Send(host, m);
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine(ex);
-                    }
-                }).Invoke();
+                AsyncTcpClient host = new AsyncTcpClient(IPAddress.Loopback);
+                Message m = new Message { Content = new People { Name = "P" + i, Age = rnd.Next(i * 10) } };
+                Send(host, m);
             }
 
             Console.ReadLine();
